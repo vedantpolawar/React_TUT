@@ -18,7 +18,7 @@ function App() {
   };
   function decVal() {
     if (counter > 0) {
-      setCounter(counter - 1);
+      setCounter((prev) => prev - 1);
     }
     console.log("Value substracted", counter);
   }
