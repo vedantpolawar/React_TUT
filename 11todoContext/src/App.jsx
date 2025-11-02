@@ -34,7 +34,7 @@ function App() {
 
   // Load from localStorage once
   useEffect(() => {
-    const storedTodos = JSON.parse(localStorage.getItem("todos"));
+    const storedTodos = JSON.parse(localStorage.getItem("todos")); //here todos is key in loacal storage
     if (storedTodos && storedTodos.length > 0) {
       setTodos(storedTodos);
     }
